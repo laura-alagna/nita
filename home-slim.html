@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — Nitaya Chawla, PsyD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--mint:#A8D5C2;--plum:#7B4F7A;--white:#F9F9F7;--gray:#2E2E2E;--border:#e0ded9}
+body{font-family:'Open Sans',sans-serif;color:var(--gray);background:var(--white);font-size:16px}
+h1,h2,h3,h4,.label,nav,button,.btn{font-family:'Raleway',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:12px 28px;border-radius:4px;font-size:14px;font-weight:600;letter-spacing:0.05em;cursor:pointer;border:none;font-family:'Raleway',sans-serif;transition:opacity 0.2s}
+.btn:hover{opacity:0.88}
+.btn-primary{background:var(--plum);color:var(--white)}
+.btn-outline{background:transparent;border:1.5px solid var(--gray);color:var(--gray)}
+.btn-outline-white{background:transparent;border:1.5px solid var(--white);color:var(--white)}
+.btn-white{background:var(--white);color:var(--plum);font-weight:600}
+.btn-sm{padding:9px 20px;font-size:13px}
+.btn-mint{background:var(--mint);color:var(--gray);font-weight:600}
+
+/* SECTION LABEL */
+.section-label{font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;color:var(--plum);text-transform:uppercase;margin-bottom:12px;display:block}
+
+/* PHOTO PLACEHOLDER */
+.photo-placeholder{background:#e4e1db;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:300px;border:2px dashed #ccc;padding:24px}
+.photo-placeholder svg{opacity:0.3}
+.photo-placeholder span{font-family:'Raleway',sans-serif;font-size:13px;color:#aaa;text-align:center;line-height:1.6}
+
+/* PHOTO BREAK */
+.photo-break{width:100%;overflow:hidden;position:relative}
+.photo-break img{width:100%;height:100%;object-fit:cover}
+.photo-break-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(46,46,46,0.6));padding:40px 48px 28px;font-family:'Raleway',sans-serif;font-size:15px;font-style:italic;font-weight:300;color:rgba(255,255,255,0.92);line-height:1.6}
+
+/* MINT CALLOUT */
+.mint-callout{background:rgba(168,213,194,0.18);border-left:3px solid var(--mint);border-radius:0 8px 8px 0;padding:18px 22px;font-size:14px;line-height:1.75;color:var(--gray)}
+.mint-callout strong{font-family:'Raleway',sans-serif;font-weight:600}
+
+/* WHAT TO EXPECT */
+.expect-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0}
+.expect-item{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#555;line-height:1.65}
+.expect-item::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mint);flex-shrink:0;margin-top:6px}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav{padding:0 20px}
+  .nav-links,.nav>.btn{display:none}
+  .nav-hamburger{display:flex}
+  .footer{grid-template-columns:1fr;padding:32px 24px}
+  .footer-nav{justify-content:flex-start}
+  .expect-row{grid-template-columns:1fr}
+  .photo-break-caption{padding:24px 24px 20px;font-size:14px}
+}
+</style>
+
+</head>
+<body style="overflow:hidden">
+
+
+
+<style>
+/* HOME-SPECIFIC */
+.hero{background:var(--mint);padding:80px 40px 0;display:flex;gap:48px;align-items:flex-end;overflow:hidden}
+.hero-text{flex:1;padding-bottom:64px}
+.hero-text h1{font-size:44px;font-weight:300;color:var(--gray);line-height:1.2;margin-bottom:20px}
+.hero-text h1 strong{font-weight:600}
+.hero-text p{font-size:16px;line-height:1.8;color:var(--gray);opacity:0.85;max-width:500px;margin-bottom:32px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero-quote{background:var(--white);border-radius:12px;padding:36px 32px;width:300px;flex-shrink:0;align-self:flex-end;margin-bottom:28px;box-shadow:0 4px 24px rgba(0,0,0,0.07)}
+.quote-mark{font-family:'Raleway',sans-serif;font-size:64px;font-weight:300;color:var(--mint);line-height:0.6;margin-bottom:16px;display:block}
+.hero-quote blockquote{font-family:'Raleway',sans-serif;font-size:17px;font-weight:400;color:var(--gray);line-height:1.65;font-style:italic;margin-bottom:20px}
+.hero-quote cite{font-size:12px;color:var(--plum);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-style:normal}
+.hero-divider{width:32px;height:2px;background:var(--mint);margin-bottom:12px}
+
+
+
+.stat-item:last-child{border-right:none}
+
+
+
+.services-section{padding:80px 40px;background:var(--white)}
+.section-header{text-align:center;max-width:640px;margin:0 auto 48px}
+.section-header h2{font-size:30px;font-weight:500;color:var(--gray);margin-bottom:12px;line-height:1.3}
+.section-header p{font-size:15px;color:#666;line-height:1.8}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
+.svc-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:28px 24px;transition:box-shadow 0.2s}
+.svc-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.07)}
+.svc-icon{width:40px;height:40px;background:rgba(168,213,194,0.25);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.svc-card h3{font-size:15px;font-weight:600;color:var(--gray);margin-bottom:8px}
+.svc-card p{font-size:13px;color:#666;line-height:1.75}
+
+.photo-break{height:380px}
+
+.about-section{padding:80px 40px;background:#fff;border-top:1px solid var(--border)}
+.about-inner{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center;max-width:960px;margin:0 auto}
+.about-img-wrap{border-radius:10px;overflow:hidden;height:360px;background:#e0ddd7;display:flex;align-items:center;justify-content:center;font-size:13px;color:#aaa;font-family:'Raleway',sans-serif;text-align:center;padding:24px}
+.about-text h2{font-size:28px;font-weight:500;color:var(--gray);margin-bottom:16px;line-height:1.3}
+.about-text p{font-size:15px;line-height:1.85;color:#555;margin-bottom:16px}
+.spec-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.spec-tag{background:rgba(168,213,194,0.2);border:1px solid var(--mint);border-radius:20px;padding:5px 14px;font-size:13px;color:var(--gray);font-family:'Raleway',sans-serif;font-weight:500}
+
+.cta-section{background:var(--plum);padding:72px 40px;text-align:center}
+.cta-section .section-label{color:var(--mint)}
+.cta-section h2{font-size:30px;font-weight:500;color:var(--white);margin-bottom:12px}
+.cta-section p{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.75}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.contact-section{padding:72px 40px;background:var(--white);border-top:1px solid var(--border)}
+.contact-inner{max-width:960px;margin:0 auto}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.info-cards{display:flex;flex-direction:column;gap:14px}
+.info-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 22px;display:flex;gap:14px;align-items:flex-start}
+.info-icon{width:34px;height:34px;background:rgba(168,213,194,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.info-key{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--plum);margin-bottom:3px}
+.info-val{font-size:14px;color:var(--gray);line-height:1.6}
+.map-col{display:flex;flex-direction:column;gap:12px}
+.map-tabs{display:flex;gap:8px}
+.tab{font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;padding:7px 18px;border-radius:20px;border:1.5px solid var(--border);background:transparent;cursor:pointer;color:#666}
+.tab.active{background:var(--plum);color:var(--white);border-color:var(--plum)}
+.map-frame{border-radius:10px;overflow:hidden;border:1px solid var(--border);flex:1;min-height:280px}
+.map-frame iframe{width:100%;height:100%;border:none;display:block;min-height:280px}
+.contact-cta-row{margin-top:32px;padding-top:28px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.contact-cta-row p{font-size:14px;color:#666;line-height:1.7;max-width:460px}
+
+@media(max-width:768px){
+  .hero{flex-direction:column;padding:48px 20px 0;gap:32px}
+  .hero-text{padding-bottom:0}
+  .hero-text h1{font-size:30px}
+  .hero-quote{width:100%;border-radius:12px;margin-bottom:0}
+  
+  
+  .services-section{padding:56px 20px}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .about-section{padding:56px 20px}
+  .about-inner{grid-template-columns:1fr;gap:32px}
+  .cta-section{padding:56px 20px}
+  .contact-section{padding:56px 20px}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-cta-row{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){
+  .services-grid{grid-template-columns:1fr}
+  
+}
+</style>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="section-label">Chicago, IL</span>
+    <h1>You deserve a life<br><strong>worth celebrating.</strong></h1>
+    <p>As a solution-focused therapist, I'm dedicated to helping you discover your authentic potential and create a life worth celebrating. Through evidence-based approaches, we'll identify patterns and limiting beliefs that may be preventing you from living a more fulfilling and meaningful life.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="getting-started.html">Get started today</a>
+      <a class="btn btn-outline" href="about.html">Learn more</a>
+    </div>
+  </div>
+  <div class="hero-quote">
+    <span class="quote-mark">"</span>
+    <blockquote>You've taken an important step toward positive change and personal growth.</blockquote>
+    <div class="hero-divider"></div>
+    <cite>A message from Dr. Chawla</cite>
+  </div>
+</section>
+
+<div style="background:var(--plum);height:12px"></div>
+
+<!-- SERVICES OVERVIEW -->
+<section class="services-section">
+  <div class="section-header">
+    <span class="section-label">What I offer</span>
+    <h2>Comprehensive therapy services tailored to you</h2>
+    <p>Using evidence-based therapeutic approaches and proven techniques, we'll identify long-standing patterns or limiting beliefs that may be preventing you from living a more fulfilling and meaningful life.</p>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card">
+      <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="#7B4F7A" stroke-width="1.5"/><path d="M3 18c0-3.5 3.1-6 7-6s7 2.5 7 6" stroke="#7B4F7A" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3>Individual therapy</h3>
+      <p>A confidential, goal-oriented space focused on your growth and healing.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="6.5" cy="7" r="2.5" stroke="#7B4F7A" stroke-width="1.5"/><circle cx="13.5" cy="7" r="2.5" stroke="#7B4F7A" stroke-width="1.5"/><path d="M1 18c0-2.5 2.5-4.5 5.5-4.5M19 18c0-2.5-2.5-4.5-5.5-4.5M7 18c0-2.5 1.3-4.5 3-4.5s3 2 3 4.5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+      <h3>Couples therapy</h3>
+      <p>Improve communication and connection with your partner in a safe, neutral space.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="11" rx="2" stroke="#7B4F7A" stroke-width="1.5"/><path d="M7 18h6M10 15v3" stroke="#7B4F7A" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3>Telehealth</h3>
+      <p>Accessible therapy anywhere in Illinois via secure video sessions.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="5.5" r="2" stroke="#7B4F7A" stroke-width="1.5"/><circle cx="4" cy="8.5" r="1.8" stroke="#7B4F7A" stroke-width="1.4"/><circle cx="16" cy="8.5" r="1.8" stroke="#7B4F7A" stroke-width="1.4"/><path d="M2 18c0-2 1.6-3.5 4-3.5M18 18c0-2-1.6-3.5-4-3.5M6.5 18c0-2.5 1.5-4.5 3.5-4.5s3.5 2 3.5 4.5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+      <h3>Group therapy</h3>
+      <p>Heal in community with others on similar journeys, professionally facilitated.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 4a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H5a2 2 0 01-2-2V4z" stroke="#7B4F7A" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      <h3>Hypnosis</h3>
+      <p>Evidence-based mind-body work for anxiety, pain, sleep, and habit change.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l1.5 4H16l-3.5 2.5 1.5 4L10 10l-4 2.5 1.5-4L4 6h4.5z" stroke="#7B4F7A" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+      <h3>Postpartum support</h3>
+      <p>Compassionate care for new parents navigating the transition to parenthood.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px"><a class="btn btn-primary" href="services.html">View all services</a></div>
+</section>
+
+<!-- PHOTO BREAK -->
+<div class="photo-break" style="height:360px">
+  <img src="images/photo4.jpg" alt="Couple smiling together" style="object-position:center 40%">
+</div>
+
+<!-- ABOUT PREVIEW -->
+<section class="about-section">
+  <div class="about-inner">
+    <div class="about-img-wrap"><img src="images/headshot.jpg" alt="Dr. Nitaya Chawla" style="width:100%;height:100%;object-fit:cover"></div>
+    <div class="about-text">
+      <span class="section-label">About Dr. Chawla</span>
+      <h2>Helping you close the gap between who you are and who you want to be</h2>
+      <p>My mission is to help each client move closer to discovering and embracing their authentic self. I believe that anxiety and depression often arise when we struggle to know and accept who we truly are. Societal expectations and early childhood experiences can create barriers to genuine self-acceptance.</p>
+      <p>I have extensive experience working with individuals from the LGBTQ+ community and South Asian backgrounds — bringing cultural sensitivity and lived understanding to every session.</p>
+      <div class="spec-tags">
+        <span class="spec-tag">Anxiety</span>
+        <span class="spec-tag">LGBTQ+</span>
+        <span class="spec-tag">South Asian</span>
+        <span class="spec-tag">Postpartum</span>
+        <span class="spec-tag">Relationships</span>
+        <span class="spec-tag">Self-esteem</span>
+        <span class="spec-tag">Pain management</span>
+        <span class="spec-tag">Sleep</span>
+      </div>
+      <div style="margin-top:28px"><a class="btn btn-primary" href="about.html">Read my full bio</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <span class="section-label">Ready to begin?</span>
+  <h2>Take the first step toward a new you</h2>
+  <p>Whether you're navigating a challenge or simply ready for change, I look forward to working with you.</p>
+  <div class="cta-btns">
+    <a class="btn btn-white" href="getting-started.html">Request an appointment</a>
+    <a class="btn btn-outline-white" href="services.html">Explore services</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <span class="section-label">Get in touch</span>
+    <h2 style="font-size:28px;font-weight:500;margin-bottom:8px">Ready to take the first step?</h2>
+    <p style="font-size:15px;color:#666;margin-bottom:0;max-width:520px;line-height:1.75">Reach out by phone or email — I'd love to hear from you and discuss how we can work together.</p>
+    <div class="contact-grid">
+      <div class="info-cards">
+        <div class="info-card"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.5 2.5h2.5l1.25 3-1.5.9a7.5 7.5 0 003.9 3.9l.9-1.5 3 1.25v2.5A1.25 1.25 0 0111.25 14C5.45 14 1 9.55 1 3.75A1.25 1.25 0 012.5 2.5z" stroke="#7B4F7A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="info-key">Phone</div><div class="info-val">(630) 479-9752</div></div></div>
+        <div class="info-card"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="#7B4F7A" stroke-width="1.2"/><path d="M1.5 5.5l6.5 4.5 6.5-4.5" stroke="#7B4F7A" stroke-width="1.2" stroke-linecap="round"/></svg></div><div><div class="info-key">Email</div><div class="info-val">nitayach@gmail.com</div></div></div>
+        <div class="info-card"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5zm0 6a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" stroke="#7B4F7A" stroke-width="1.2"/></svg></div><div><div class="info-key">Uptown</div><div class="info-val">850 W Irving Park Rd, Uptown, Chicago IL 60613</div></div></div>
+        <div class="info-card"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5zm0 6a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" stroke="#7B4F7A" stroke-width="1.2"/></svg></div><div><div class="info-key">Michigan Ave</div><div class="info-val">155 N Michigan Ave, Suite 533, Chicago IL 60601</div></div></div>
+      </div>
+      <div class="map-col">
+        <div class="map-tabs">
+          <button class="tab active" onclick="showMap('irving',this)">Uptown</button>
+          <button class="tab" onclick="showMap('michigan',this)">Michigan Ave</button>
+        </div>
+        <div class="map-frame">
+          <iframe id="map-irving" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.8!2d-87.6542!3d41.9538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e4a0e5f1c7%3A0x1!2s850+W+Irving+Park+Rd%2C+Chicago%2C+IL+60613!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy"></iframe>
+          <iframe id="map-michigan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1!2d-87.6226!3d41.8858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca6a3c5f1a3%3A0x1!2s155+N+Michigan+Ave%2C+Chicago%2C+IL+60601!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" style="display:none"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="contact-cta-row">
+      <p>Call or email anytime to request a consultation for individual, couples, or family therapy.</p>
+      <a class="btn btn-primary" href="mailto:nitayach@gmail.com">Send an email</a>
+    </div>
+  </div>
+</section>
+<script>
+function showMap(loc,btn){
+  document.getElementById('map-irving').style.display=loc==='irving'?'block':'none';
+  document.getElementById('map-michigan').style.display=loc==='michigan'?'block':'none';
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+}
+</script>
+
+
+
+</body>
+</html>

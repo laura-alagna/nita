@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources — Nitaya Chawla, PsyD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--mint:#A8D5C2;--plum:#7B4F7A;--white:#F9F9F7;--gray:#2E2E2E;--border:#e0ded9}
+body{font-family:'Open Sans',sans-serif;color:var(--gray);background:var(--white);font-size:16px}
+h1,h2,h3,h4,.label,nav,button,.btn{font-family:'Raleway',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:12px 28px;border-radius:4px;font-size:14px;font-weight:600;letter-spacing:0.05em;cursor:pointer;border:none;font-family:'Raleway',sans-serif;transition:opacity 0.2s}
+.btn:hover{opacity:0.88}
+.btn-primary{background:var(--plum);color:var(--white)}
+.btn-white{background:var(--white);color:var(--plum);font-weight:600}
+.btn-sm{padding:9px 20px;font-size:13px}
+
+/* SECTION LABEL */
+.section-label{font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;color:var(--plum);text-transform:uppercase;margin-bottom:12px;display:block}
+
+/* PHOTO BREAK */
+.photo-break{width:100%;overflow:hidden;position:relative}
+.photo-break img{width:100%;height:100%;object-fit:cover}
+
+/* RESPONSIVE BASE */
+@media(max-width:768px){
+  .nav{padding:0 20px}
+  .nav-links,.nav>.btn{display:none}
+  .nav-hamburger{display:flex}
+  .footer{grid-template-columns:1fr;padding:32px 24px}
+  .footer-nav{justify-content:flex-start}
+}
+
+/* PAGE STYLES */
+.page-hero{background:var(--mint);padding:64px 40px;text-align:center}
+.page-hero h1{font-size:40px;font-weight:300;color:var(--gray);margin-bottom:16px;line-height:1.2}
+.page-hero h1 strong{font-weight:600}
+.page-hero p{font-size:16px;line-height:1.8;color:var(--gray);opacity:0.85;max-width:540px;margin:0 auto}
+
+/* RESOURCE CARDS */
+.resources-section{padding:80px 40px;background:var(--white)}
+.resources-inner{max-width:960px;margin:0 auto}
+.resources-inner h2{font-size:26px;font-weight:500;color:var(--gray);margin-bottom:8px}
+.resources-inner .intro{font-size:15px;color:#666;line-height:1.75;margin-bottom:36px;max-width:680px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:56px}
+.resource-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:10px;transition:box-shadow 0.2s}
+.resource-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.07)}
+.resource-tag{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--plum)}
+.resource-card h3{font-size:15px;font-weight:600;color:var(--gray);line-height:1.3}
+.resource-card p{font-size:13px;color:#666;line-height:1.7;flex:1}
+.resource-link{font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:var(--plum);display:inline-flex;align-items:center;gap:6px;margin-top:4px}
+
+/* PODCAST CALLOUT */
+.podcast-callout{background:var(--gray);border-radius:12px;padding:32px 36px;display:flex;gap:28px;align-items:center;margin-bottom:56px}
+.podcast-icon{width:56px;height:56px;flex-shrink:0;background:var(--plum);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.podcast-body{flex:1}
+.podcast-body .section-label{color:var(--mint);margin-bottom:6px}
+.podcast-body h3{font-size:18px;font-weight:600;color:var(--white);margin-bottom:8px;line-height:1.3}
+.podcast-body p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.75}
+.podcast-btn{flex-shrink:0;background:var(--mint);color:var(--gray);font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:4px;display:inline-block;white-space:nowrap;transition:opacity 0.2s}
+.podcast-btn:hover{opacity:0.88}
+
+/* NEWS / ARTICLES */
+.news-section{padding:80px 40px;background:#fff;border-top:1px solid var(--border)}
+.news-inner{max-width:960px;margin:0 auto}
+.news-inner h2{font-size:26px;font-weight:500;color:var(--gray);margin-bottom:8px}
+.news-intro{font-size:15px;color:#666;line-height:1.75;margin-bottom:36px;max-width:680px}
+.article-categories{display:flex;flex-direction:column;gap:36px}
+.article-cat-label{font-size:13px;font-family:'Raleway',sans-serif;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--plum);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.article-list{display:flex;flex-direction:column}
+.article-item{padding:12px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.article-item:last-child{border-bottom:none}
+.article-item a{font-size:14px;color:var(--gray);line-height:1.5;transition:color 0.2s}
+.article-item a:hover{color:var(--plum)}
+.article-date{font-size:12px;color:#aaa;font-family:'Raleway',sans-serif;flex-shrink:0}
+
+/* LINK DIRECTORY */
+.links-section{padding:80px 40px;background:var(--white);border-top:1px solid var(--border)}
+.links-inner{max-width:960px;margin:0 auto}
+.links-inner h2{font-size:26px;font-weight:500;color:var(--gray);margin-bottom:8px}
+.links-intro{font-size:15px;color:#666;line-height:1.75;margin-bottom:36px;max-width:680px}
+.links-columns{display:grid;grid-template-columns:1fr 1fr;gap:40px 56px}
+.link-group{display:flex;flex-direction:column;gap:0}
+.link-group-title{font-size:12px;font-family:'Raleway',sans-serif;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--plum);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.link-group ul{list-style:none;display:flex;flex-direction:column}
+.link-group li{border-bottom:1px solid var(--border)}
+.link-group li:last-child{border-bottom:none}
+.link-group a{font-size:13px;color:#555;line-height:1.5;padding:8px 0;display:block;transition:color 0.2s}
+.link-group a:hover{color:var(--plum)}
+
+.disclaimer{padding:40px;background:var(--white);border-top:1px solid var(--border);text-align:center}
+.disclaimer p{font-size:13px;color:#999;line-height:1.75;max-width:680px;margin:0 auto}
+
+.resources-cta{background:var(--plum);padding:72px 40px;text-align:center}
+.resources-cta .section-label{color:var(--mint)}
+.resources-cta h2{font-size:28px;font-weight:500;color:var(--white);margin-bottom:12px}
+.resources-cta p{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:32px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.75}
+
+@media(max-width:768px){
+  .page-hero{padding:48px 20px}
+  .page-hero h1{font-size:30px}
+  .resources-section,.news-section,.links-section{padding:56px 20px}
+  .resource-grid{grid-template-columns:1fr 1fr}
+  .podcast-callout{flex-direction:column;gap:20px;padding:24px}
+  .podcast-btn{width:100%;text-align:center}
+  .links-columns{grid-template-columns:1fr}
+  .resources-cta{padding:56px 20px}
+}
+@media(max-width:480px){
+  .resource-grid{grid-template-columns:1fr}
+}
+</style>
+
+</head>
+<body style="overflow:hidden">
+
+
+<!-- HERO -->
+<section class="page-hero">
+  <span class="section-label">Resources</span>
+  <h1>Tools to support <strong>your journey.</strong></h1>
+  <p>A curated collection of mental health and physical health resources Dr. Chawla recommends, plus updates from her practice.</p>
+</section>
+
+<!-- CURATED RESOURCE CARDS -->
+<section class="resources-section">
+  <div class="resources-inner">
+    <span class="section-label">Mental health</span>
+    <h2>Mental health resources</h2>
+    <p class="intro">These are organizations, tools, and hotlines Dr. Chawla recommends to clients and the broader community. If you are in crisis, please reach out to a crisis line immediately.</p>
+    <div class="resource-grid">
+      <div class="resource-card">
+        <div class="resource-tag">Crisis support</div>
+        <h3>988 Suicide &amp; Crisis Lifeline</h3>
+        <p>Free, confidential support for people in distress. Call or text 988 anytime, 24/7. Chat also available online.</p>
+        <a class="resource-link" href="https://988lifeline.org" target="_blank">988lifeline.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">LGBTQ+ support</div>
+        <h3>The Trevor Project</h3>
+        <p>Crisis intervention and suicide prevention for LGBTQ+ young people. TrevorLifeline: 1-866-488-7386.</p>
+        <a class="resource-link" href="https://www.thetrevorproject.org" target="_blank">thetrevorproject.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">LGBTQ+ affirming</div>
+        <h3>PFLAG</h3>
+        <p>Support, education, and advocacy for LGBTQ+ people and their families. Local chapters available nationwide.</p>
+        <a class="resource-link" href="https://pflag.org" target="_blank">pflag.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">South Asian mental health</div>
+        <h3>South Asian Mental Health Initiative (SAMHIN)</h3>
+        <p>Mental health awareness, advocacy, and provider directory for the South Asian community in North America.</p>
+        <a class="resource-link" href="https://samhin.org" target="_blank">samhin.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Postpartum support</div>
+        <h3>Postpartum Support International</h3>
+        <p>Resources, helpline, and support groups for postpartum depression, anxiety, and perinatal mental health.</p>
+        <a class="resource-link" href="https://www.postpartum.net" target="_blank">postpartum.net <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Anxiety &amp; OCD</div>
+        <h3>Anxiety &amp; Depression Association of America</h3>
+        <p>Education, resources, and a therapist directory for anxiety, depression, OCD, PTSD, and related conditions.</p>
+        <a class="resource-link" href="https://adaa.org" target="_blank">adaa.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <span class="section-label">Physical health</span>
+    <h2>Physical health resources</h2>
+    <p class="intro">Mental and physical health are deeply connected. These resources support the whole-person approach Dr. Chawla brings to her practice.</p>
+    <div class="resource-grid">
+      <div class="resource-card">
+        <div class="resource-tag">Sleep</div>
+        <h3>American Academy of Sleep Medicine</h3>
+        <p>Evidence-based information on sleep disorders, sleep hygiene, and finding accredited sleep centers.</p>
+        <a class="resource-link" href="https://sleepeducation.org" target="_blank">sleepeducation.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Chronic pain</div>
+        <h3>American Chronic Pain Association</h3>
+        <p>Support groups, tools, and resources for people living with chronic pain and their care partners.</p>
+        <a class="resource-link" href="https://theacpa.org" target="_blank">theacpa.org <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">General wellness</div>
+        <h3>MedlinePlus</h3>
+        <p>Reliable, easy-to-understand health information from the U.S. National Library of Medicine. No ads, no fluff.</p>
+        <a class="resource-link" href="https://medlineplus.gov" target="_blank">medlineplus.gov <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2v5" stroke="#7B4F7A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS / ARTICLES -->
+<section class="news-section">
+  <div class="news-inner">
+    <span class="section-label">Recent news</span>
+    <h2>From Dr. Chawla's practice</h2>
+    <p class="news-intro">Occasional reflections, announcements, and articles on mental health topics Dr. Chawla cares about.</p>
+
+    <!-- PODCAST FEATURE -->
+    <div class="podcast-callout">
+      <div class="podcast-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="9" r="4.5" stroke="white" stroke-width="1.6"/><path d="M7 22c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="white" stroke-width="1.6" stroke-linecap="round"/><circle cx="13" cy="9" r="1.8" fill="white"/></svg>
+      </div>
+      <div class="podcast-body">
+        <span class="section-label">Featured</span>
+        <h3>Dr. Chawla on the Chicago Psychology Podcast</h3>
+        <p>Dr. Chawla was featured in a conversation with Dr. Scott Hoye about her experience and insights into working with South Asian couples — navigating cultural expectations, identity, and relationships in therapy.</p>
+      </div>
+      <a class="podcast-btn" href="https://www.spreaker.com/user/11347814/therapy-with-south-asian-couples-with-ni" target="_blank">Listen now →</a>
+    </div>
+
+    <!-- ARTICLE LINKS BY CATEGORY -->
+    <div class="article-categories">
+      <div>
+        <div class="article-cat-label">Psychotherapy</div>
+        <div class="article-list">
+          <div class="article-item"><a href="https://www.psychiatry.org/patients-families/psychotherapy" target="_blank">What Is Psychotherapy? — American Psychiatric Association</a><span class="article-date">Updated 2023</span></div>
+          <div class="article-item"><a href="https://www.verywellmind.com/what-is-psychotherapy-2795507" target="_blank">How Psychotherapy Works — Verywell Mind</a><span class="article-date">Regularly updated</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/blog/podcast-directory" target="_blank">Inside Mental Health Podcast — PsychCentral</a><span class="article-date">Ongoing</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="article-cat-label">Parenting &amp; Children</div>
+        <div class="article-list">
+          <div class="article-item"><a href="https://childmind.org" target="_blank">Child Mind Institute — Resources for Parents</a><span class="article-date">Regularly updated</span></div>
+          <div class="article-item"><a href="https://www.verywellfamily.com/mental-health-4157488" target="_blank">Parenting &amp; Mental Health — Verywell Family</a><span class="article-date">Regularly updated</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/blog/is/navigating-childrens-mental-health" target="_blank">Navigating Children's Mental Health: What's Expected vs. a Crisis — PsychCentral</a><span class="article-date">Jan 2025</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="article-cat-label">Anxiety</div>
+        <div class="article-list">
+          <div class="article-item"><a href="https://adaa.org/understanding-anxiety" target="_blank">Understanding Anxiety Disorders — ADAA</a><span class="article-date">Regularly updated</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/anxiety/anxious-vs-anxiety" target="_blank">Anxious vs. Anxiety Disorder: How to Tell the Difference — PsychCentral</a><span class="article-date">Jan 2025</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/lib/what-to-do-if-youre-feeling-anxious-right-now" target="_blank">How to Calm Down Quickly — PsychCentral</a><span class="article-date">Nov 2024</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="article-cat-label">Depression</div>
+        <div class="article-list">
+          <div class="article-item"><a href="https://www.verywellmind.com/depression-4157235" target="_blank">Depression: Symptoms, Causes &amp; Treatment — Verywell Mind</a><span class="article-date">Regularly updated</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/depression/depression-treatment-psychotherapy-medication-or-both" target="_blank">Is Therapy or Medication Better for Depression? — PsychCentral</a><span class="article-date">Feb 2025</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/depression/letter-to-a-loved-one-when-depressed" target="_blank">Living with Depression: A Letter to Your Loved Ones — PsychCentral</a><span class="article-date">Nov 2021</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="article-cat-label">OCD</div>
+        <div class="article-list">
+          <div class="article-item"><a href="https://iocdf.org/about-ocd/" target="_blank">What Is OCD? — International OCD Foundation</a><span class="article-date">Updated Feb 2025</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/ocd/ocd-and-depression" target="_blank">The Link Between OCD and Depression — PsychCentral</a><span class="article-date">2024</span></div>
+          <div class="article-item"><a href="https://psychcentral.com/blog/what-to-do-with-intrusive-thoughts/" target="_blank">What to Do with Intrusive Thoughts — PsychCentral</a><span class="article-date">2020</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BREAK -->
+<div class="photo-break" style="height:360px">
+  <img src="images/photo6.jpg" alt="Two people laughing outdoors" style="object-position:center 35%">
+</div>
+
+<!-- EXTENDED LINK DIRECTORY -->
+<section class="links-section">
+  <div class="links-inner">
+    <span class="section-label">Additional resources</span>
+    <h2>Mental health link directory</h2>
+    <p class="links-intro">A broader collection of associations, hotlines, and informational sites. This list is not comprehensive, nor does inclusion constitute an endorsement of any site's content.</p>
+    <div class="links-columns">
+      <div class="link-group">
+        <div class="link-group-title">Associations &amp; institutes</div>
+        <ul>
+          <li><a href="http://www.apa.org/" target="_blank">American Psychological Association</a></li>
+          <li><a href="http://www.aamft.org/" target="_blank">American Association for Marriage and Family Therapy</a></li>
+          <li><a href="http://www.aacap.org/" target="_blank">American Academy of Child &amp; Adolescent Psychiatry</a></li>
+          <li><a href="http://www.nami.org/" target="_blank">NAMI — National Alliance on Mental Illness</a></li>
+          <li><a href="https://mhanational.org/" target="_blank">Mental Health America</a></li>
+          <li><a href="http://www.nimh.nih.gov/" target="_blank">National Institute of Mental Health</a></li>
+          <li><a href="https://www.samhsa.gov/" target="_blank">Substance Abuse and Mental Health Administration</a></li>
+          <li><a href="https://www.nctsn.org/" target="_blank">National Child Traumatic Stress Network</a></li>
+        </ul>
+        <div class="link-group-title" style="margin-top:28px">Suicide awareness &amp; crisis</div>
+        <ul>
+          <li><a href="http://www.afsp.org/" target="_blank">American Foundation for Suicide Prevention</a></li>
+          <li><a href="http://www.save.org/" target="_blank">Suicide Awareness Voices of Education</a></li>
+          <li><a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line — text HOME to 741741</a></li>
+          <li><a href="https://jedfoundation.org/" target="_blank">The Jed Foundation (JED)</a></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <div class="link-group-title">Depression &amp; bipolar</div>
+        <ul>
+          <li><a href="http://www.dbsalliance.org/" target="_blank">Depression and Bipolar Support Alliance</a></li>
+          <li><a href="https://www.pendulum.org/" target="_blank">Bipolar Disorder News — Pendulum.org</a></li>
+        </ul>
+        <div class="link-group-title" style="margin-top:28px">Anxiety &amp; OCD</div>
+        <ul>
+          <li><a href="http://www.ocfoundation.org/" target="_blank">International OCD Foundation</a></li>
+          <li><a href="http://www.beyondocd.org/" target="_blank">Beyond OCD</a></li>
+        </ul>
+        <div class="link-group-title" style="margin-top:28px">PTSD &amp; trauma</div>
+        <ul>
+          <li><a href="http://www.ptsd.va.gov/" target="_blank">National Center for PTSD</a></li>
+          <li><a href="http://www.sidran.org/" target="_blank">Sidran Institute</a></li>
+          <li><a href="http://www.giveanhour.org/" target="_blank">Give an Hour — for veterans &amp; families</a></li>
+        </ul>
+        <div class="link-group-title" style="margin-top:28px">Addiction &amp; recovery</div>
+        <ul>
+          <li><a href="http://www.aa.org/" target="_blank">Alcoholics Anonymous</a></li>
+          <li><a href="https://www.na.org/" target="_blank">Narcotics Anonymous</a></li>
+          <li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">SAMHSA National Helpline — 1-800-662-4357</a></li>
+        </ul>
+        <div class="link-group-title" style="margin-top:28px">Child abuse &amp; domestic violence</div>
+        <ul>
+          <li><a href="http://www.childhelp.org/" target="_blank">Childhelp USA</a></li>
+          <li><a href="http://www.ndvh.org/" target="_blank">National Domestic Violence Hotline</a></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <div class="link-group-title">Physical health &amp; wellness</div>
+        <ul>
+          <li><a href="http://mayoclinic.com/" target="_blank">Mayo Clinic</a></li>
+          <li><a href="http://webmd.com/" target="_blank">WebMD</a></li>
+          <li><a href="https://www.verywellmind.com/" target="_blank">Verywell Mind</a></li>
+          <li><a href="https://health.gov/moveyourway" target="_blank">Move Your Way — fitness guidance</a></li>
+          <li><a href="https://www.fda.gov/drugs" target="_blank">Medications — FDA</a></li>
+          <li><a href="http://ncbi.nlm.nih.gov/" target="_blank">National Center for Biotechnology Information</a></li>
+        </ul>
+        <div class="link-group-title" style="margin-top:28px">Women's health</div>
+        <ul>
+          <li><a href="http://healthywomen.org/" target="_blank">Healthy Women</a></li>
+          <li><a href="https://www.womenheart.org/" target="_blank">WomenHeart</a></li>
+          <li><a href="http://womenshealth.gov/" target="_blank">Office on Women's Health</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">
+  <p>The resources listed on this page are provided for informational purposes only and do not constitute an endorsement by Dr. Nitaya Chawla or her practice. These links are not a substitute for professional medical or psychological advice. If you are experiencing a mental health emergency, please call 988 or go to your nearest emergency room.</p>
+</div>
+
+<section class="resources-cta">
+  <span class="section-label">Let's connect</span>
+  <h2>Have a resource to suggest?</h2>
+  <p>If you know of a resource that would benefit the community, I'd love to hear about it.</p>
+  <a class="btn btn-white" href="getting-started.html">Get in touch</a>
+</section>
+
+
+</body>
+</html>
