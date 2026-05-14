@@ -128,12 +128,15 @@ a{color:inherit;text-decoration:none}
 .contact-cta-row p{font-size:14px;color:#666;line-height:1.7;max-width:460px}
 
 @media(max-width:768px){
-  .hero{flex-direction:column;padding:44px 20px 0;gap:28px}
+  .hero{flex-direction:column;padding:44px 20px 32px;gap:28px}
   .hero-text{padding-bottom:0}
   .hero-text h1{font-size:28px}
   .hero-text p{font-size:15px;margin-bottom:24px}
-  .hero-quote{width:100%;border-radius:12px;margin-bottom:0}
-  .hero-quote blockquote{font-size:15px}
+  .hero-quote{width:100%;border-radius:12px;margin-bottom:0;padding:20px 24px;display:flex;gap:16px;align-items:flex-start}
+  .quote-mark{font-size:40px;margin-bottom:0;flex-shrink:0;line-height:1}
+  .hero-quote-body{flex:1}
+  .hero-quote blockquote{font-size:14px;margin-bottom:12px}
+  .hero-divider{margin-bottom:8px}
   .services-section{padding:48px 20px}
   .section-header h2{font-size:24px}
   .services-grid{grid-template-columns:1fr 1fr}
@@ -153,12 +156,9 @@ a{color:inherit;text-decoration:none}
   .map-frame iframe{min-height:220px}
 }
 @media(max-width:480px){
-  .hero{padding:36px 16px 0;gap:20px}
-  .hero-text h1{font-size:24px}
+  .hero{padding:32px 16px 24px;gap:16px}
+  .hero-text h1{font-size:22px}
   .hero-text p{font-size:14px}
-  .hero-quote{padding:24px 20px}
-  .quote-mark{font-size:48px}
-  .hero-quote blockquote{font-size:14px}
   .services-section{padding:36px 16px}
   .section-header{margin-bottom:28px}
   .section-header h2{font-size:22px}
@@ -194,9 +194,11 @@ a{color:inherit;text-decoration:none}
   </div>
   <div class="hero-quote">
     <span class="quote-mark">"</span>
-    <blockquote>You've taken an important step toward positive change and personal growth.</blockquote>
-    <div class="hero-divider"></div>
-    <cite>A message from Dr. Chawla</cite>
+    <div class="hero-quote-body">
+      <blockquote>You've taken an important step toward positive change and personal growth.</blockquote>
+      <div class="hero-divider"></div>
+      <cite>A message from Dr. Chawla</cite>
+    </div>
   </div>
 </section>
 
@@ -252,7 +254,7 @@ a{color:inherit;text-decoration:none}
 <!-- ABOUT PREVIEW -->
 <section class="about-section">
   <div class="about-inner">
-    <div class="about-img-wrap"><img src="images/nita_pic.avif" alt="Dr. Nitaya Chawla" style="width:100%;height:100%;object-fit:cover"></div>
+    <div class="about-img-wrap"><img src="images/nita_pic.jpg" alt="Dr. Nitaya Chawla" style="width:100%;height:100%;object-fit:cover"></div>
     <div class="about-text">
       <span class="section-label">About Dr. Chawla</span>
       <h2>Helping you close the gap between who you are and who you want to be</h2>
