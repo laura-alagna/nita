@@ -69,7 +69,7 @@ a{color:inherit;text-decoration:none}
 .page-hero h1 strong{font-weight:600}
 .page-hero p{font-size:16px;line-height:1.8;color:var(--gray);opacity:0.85;max-width:560px;margin:0 auto 32px}
 
-.service-nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 40px;display:flex;gap:0;overflow-x:auto;position:sticky;top:68px;z-index:99;scrollbar-width:none}
+.service-nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 40px;display:flex;gap:0;overflow-x:auto;position:sticky;top:0;z-index:99;scrollbar-width:none}
 .service-nav::-webkit-scrollbar{display:none}
 .snav-pill{font-family:'Raleway',sans-serif;font-size:13px;font-weight:500;color:#888;padding:14px 18px;border-bottom:2px solid transparent;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
 .snav-pill:hover,.snav-pill.active{color:var(--plum);border-bottom-color:var(--plum)}
@@ -98,13 +98,39 @@ a{color:inherit;text-decoration:none}
 .services-cta p{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.75}
 
 @media(max-width:768px){
-  .page-hero{padding:48px 20px}
-  .page-hero h1{font-size:30px}
-  .service-nav{padding:0 20px}
+  .page-hero{padding:44px 20px}
+  .page-hero h1{font-size:28px}
+  .page-hero p{font-size:15px}
+  .service-nav{padding:0 16px;top:0}
   .services-wrapper{padding:0 20px}
-  .service-block{padding:48px 0}
-  .service-header-text h2{font-size:24px}
-  .services-cta{padding:56px 20px}
+  .service-block{padding:44px 0}
+  .service-header-text h2{font-size:22px}
+  .services-cta{padding:48px 20px}
+  .services-cta h2{font-size:22px}
+  .services-cta a.btn{display:block;text-align:center}
+  div[style*="padding:48px 40px"]{padding:36px 20px 0!important}
+  div[style*="padding:56px 0 8px"]{padding:40px 0 8px!important}
+}
+@media(max-width:480px){
+  .page-hero{padding:36px 16px}
+  .page-hero h1{font-size:22px}
+  .page-hero p{font-size:14px}
+  .page-hero .btn{display:block;text-align:center;width:100%}
+  .services-wrapper{padding:0 16px}
+  .service-block{padding:36px 0}
+  .service-header{gap:12px}
+  .service-icon{width:38px;height:38px}
+  .service-header-text h2{font-size:20px}
+  .service-body p{font-size:14px}
+  .expect-row{grid-template-columns:1fr}
+  .highlight-box{padding:20px 20px}
+  .highlight-box p{font-size:13px}
+  .mint-callout{font-size:13px}
+  .services-cta{padding:36px 16px}
+  .services-cta h2{font-size:20px}
+  .services-cta p{font-size:14px}
+  .photo-break{height:220px}
+  .snav-pill{font-size:12px;padding:12px 14px}
 }
 </style>
 
